@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using Microsoft.Bot.Builder.Dialogs;
 using Microsoft.Bot.Connector;
 
-namespace BotApp.Dialogs
+namespace Marmitaria_QnA.Dialogs
 {
     [Serializable]
     public class RootDialog : IDialog<object>

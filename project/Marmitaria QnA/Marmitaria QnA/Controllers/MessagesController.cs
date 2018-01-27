@@ -5,7 +5,7 @@ using System.Web.Http;
 using Microsoft.Bot.Builder.Dialogs;
 using Microsoft.Bot.Connector;
 
-namespace BotApp
+namespace Marmitaria_QnA
 {
     [BotAuthentication]
     public class MessagesController : ApiController
@@ -18,7 +18,8 @@ namespace BotApp
         {
             if (activity.Type == ActivityTypes.Message)
             {
-                await Conversation.SendAsync(activity, () => new Dialogs.RootDialog());
+                await Conversation.SendAsync(activity, () => new Dialogs.QnaDialog()); 
+                // onde ele reconhece a classe de dialogo
             }
             else
             {

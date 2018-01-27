@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
 
-namespace BotApp
+namespace Marmitaria_QnA
 {
     public static class WebApiConfig
     {
